@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transmute</title>
+
+  <!-- Tangle -->
+  <script type="text/javascript" src="src/tangle/Tangle.js"></script>
+
+  <!-- TangleKit (optional) -->
+  <link rel="stylesheet" href="src/tangle/TangleKit/TangleKit.css" type="text/css">
+  <script type="text/javascript" src="src/tangle/TangleKit/mootools.js"></script>
+  <script type="text/javascript" src="src/tangle/TangleKit/sprintf.js"></script>
+  <script type="text/javascript" src="src/tangle/TangleKit/BVTouchable.js"></script>
+  <script type="text/javascript" src="src/tangle/TangleKit/TangleKit.js"></script>
+
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.teal-light_blue.min.css" />
+
+  <link rel="stylesheet" href="src/styles.css" />
+  <script type="text/javascript" src="src/scripts.js"></script>
+  <script type="text/javascript" src="src/particles/particles.js"></script>
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+</head>
+
+<body onload="setUpTangle();">
+
+  <div id="particles-js">
+  </div>
+  <img src="src/images/logo-white.png" class='logo' />
+  <div id="main-card">
+
+    <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+
+      <div class="mdl-card__title">
+        <h2 class="mdl-card__title-text">Welcome</h2>
+      </div>
+      <div class="mdl-card__supporting-text">
+        <div id="example">
+          <p>
+            Assuming yearly revenue is <span data-var="yearly_net_revenue" class="TKAdjustableNumber" data-min="0" data-max="100000"> ETH</span>,
+            and the yearly revenue dividend percent is <span data-var="yearly_dividend_revenue_percent" class="TKAdjustableNumber"
+              data-min="0" data-max="100"> %</span>, with a total token supply of
+            <span data-var="token_total" class="TKAdjustableNumber" data-min="0" data-max="100000"> </span>.
+          </p>
+          <p>
+            The total payout to shareholders is <span data-var="total_shareholder_payout"></span> ETH.
+          </p>
+          <p>
+            A shareholder owning <span data-var="token_holdings" class="TKAdjustableNumber" data-min="0" data-max="100000"></span>            tokens, <span data-var="share_holder_percent"></span>% of the token supply, would earn a yearly dividend of
+            <span data-var="share_holder_earnings"></span> ETH.
+          </p>
+        </div>
+      </div>
+      <div class="mdl-card__actions mdl-card--border">
+        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="https://github.com/transmute-industries">
+          Github
+        </a>
+        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="https://transmute.industries/">
+          Website
+        </a>
+        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="http://news.transmute.industries/#/">
+          News
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -42,18 +42,20 @@
       <div class="mdl-card__supporting-text">
         <div id="example">
           <p>
-            Assuming yearly revenue is <span data-var="yearly_net_revenue" class="TKAdjustableNumber" data-min="0" data-max="100000"> ETH</span>,
-            and the yearly revenue dividend percent is <span data-var="yearly_dividend_revenue_percent" class="TKAdjustableNumber"
-              data-min="0" data-max="100"> %</span>, with a total token supply of
-            <span data-var="token_total" class="TKAdjustableNumber" data-min="0" data-max="100000"> </span>.
+            MANA represents the cost of cloud computing on the transmute oracle platform. Because costs can change, the following formula
+            is used to price MANA in ETH.
           </p>
           <p>
-            The total payout to shareholders is <span data-var="total_shareholder_payout"></span> ETH.
+            <br/> Assuming 1 CLOUD costs <span data-var="cost_cloud_in_usd" class="TKAdjustableNumber" data-min="0" data-max="100000"> USD</span>.
+            <br/> Assuming 1 USD costs <span data-var="cost_usd_in_eth" class="TKAdjustableNumber" data-min="0" data-max="100000"> ETH</span>
+            <br/> 1 ETH in USD will be <span data-var="cost_eth_in_usd"></span>.
+            <br/> 1 CLOUD in ETH will be <span data-var="cost_cloud_in_eth"></span>.
+           
           </p>
-          <p>
-            A shareholder owning <span data-var="token_holdings" class="TKAdjustableNumber" data-min="0" data-max="100000"></span>            tokens, <span data-var="share_holder_percent"></span>% of the token supply, would earn a yearly dividend of
-            <span data-var="share_holder_earnings"></span> ETH.
-          </p>
+
+          <a href="https://etherconverter.online/" target="_blank">Ethereum Unit Converter</a>
+
+          <a href="https://www.networkworld.com/article/3145470/cloud-computing/how-to-compare-cloud-costs-between-amazon-microsoft-and-google.html" target="_blank"> Cost Cloud Computing</a>
         </div>
       </div>
       <div class="mdl-card__actions mdl-card--border">
